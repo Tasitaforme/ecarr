@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const ModalBackdrop = styled.div`
   height: 100vh;
   width: 100vw;
+  padding: 20px;
   background-color: var(--text-color-translucent);
   position: fixed;
   top: 0;
@@ -23,13 +24,14 @@ export const ModalBackdrop = styled.div`
 export const ModalContainer = styled.div`
   position: relative;
   padding: 40px;
-  margin: 20px;
   background-color: var(--white-color);
   border-radius: 24px;
 
   transform: scale(0);
   transition: transform var(--transition-dur-and-fun);
   max-width: 540px;
+  height: 100%;
+  overflow-y: auto;
 
   &.active {
     transform: scale(1);
@@ -92,6 +94,7 @@ export const Item = styled.li`
   display: flex;
   align-items: center;
   color: var(--text-color-translucent);
+  font-family: ManropeRegular;
   font-size: 12px;
 
   &:not(:last-child) {
@@ -119,13 +122,14 @@ export const ConditionsList = styled.ul`
   flex-wrap: wrap;
   gap: 8px;
 
-  font-size: 12px;
   letter-spacing: -0.24px;
 
   & li {
     border-radius: 35px;
     background-color: #f9f9f9;
     padding: 7px 14px;
+    font-family: ManropeRegular;
+    font-size: 12px;
   }
   & span {
     font-family: ManropeSemiBold;
