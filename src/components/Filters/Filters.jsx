@@ -90,7 +90,6 @@ export default function Filters() {
         <FilterBrandWrap>
           <p>Car brand</p>
           <CreatableSelect
-            isClearable
             placeholder="Enter the text"
             options={brandOptions}
             value={selectedBrand}
