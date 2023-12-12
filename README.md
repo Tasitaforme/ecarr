@@ -1,4 +1,4 @@
-👉 [Task](./TASK.md) 👉 [Links](./Links.md)
+👉 [Task](./TASK.md) 👉 [Links](./LINKS.md)
 
 ![preview-hw](/preview.jpg)
 
