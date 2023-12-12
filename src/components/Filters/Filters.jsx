@@ -40,9 +40,11 @@ export default function Filters() {
     const values = data.map(item => item.split('$')[1]);
     return values;
   };
-  const brandValues = makeUniqueValues(carsAll, 'make');
+  const brandValues = makeUniqueValues(carsAll, 'make').sort();
   const priceValues = makeUniqueValues(carsAll, 'rentalPrice');
-  const formattedPriceValues = formatValues(priceValues);
+  const formattedPriceValues = formatValues(priceValues).sort(function (a, b) {
+    return a - b;
+  });
 
   const makeOptions = data => {
     const values = [...data.map(item => ({ value: item, label: item }))];

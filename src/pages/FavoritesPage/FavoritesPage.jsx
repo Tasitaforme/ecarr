@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom';
 export default function FavoritesPage() {
   const navigate = useNavigate();
   const { favorites } = useSelector(selectFavorites);
-  console.log(favorites);
+
   return (
     <main>
       <Hero />
