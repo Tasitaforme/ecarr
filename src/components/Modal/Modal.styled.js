@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import defaultPhoto from '../../images/default-rectangle.jpg';
 
 export const ModalBackdrop = styled.div`
   height: 100vh;
@@ -30,7 +31,7 @@ export const ModalContainer = styled.div`
   transform: scale(0);
   transition: transform var(--transition-dur-and-fun);
   max-width: 540px;
-  height: 100%;
+  max-height: calc(100% - 20px);
   overflow-y: auto;
 
   &.active {
@@ -57,7 +58,10 @@ export const CrossWrap = styled.button`
 `;
 
 export const Image = styled.img`
+  background: no-repeat url(${defaultPhoto}) center;
+  background-size: contain;
   width: 100%;
+  height: 248px;
   object-fit: cover;
   border-radius: 14px;
 `;

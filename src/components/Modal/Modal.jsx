@@ -55,7 +55,7 @@ export default function Modal({ active, setActive, data }) {
             <use href={sprite + '#cross'}></use>
           </svg>
         </CrossWrap>
-        <Image src={data.img} alt={data.make} width="460" />
+        <Image src={data.imgd} alt={data.make} width="460" />
         <TextWrap>
           <Title>
             {data.make} <Span>{data.model}, </Span>

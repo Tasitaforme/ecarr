@@ -39,9 +39,9 @@ const GlobalStyle = createGlobalStyle`
         font-style: normal;
     }
     
-    /* body {
+    body {
         font-family: ManropeRegular;
-    } */
+    }
 
     h1,
     h2,
@@ -50,6 +50,7 @@ const GlobalStyle = createGlobalStyle`
     h5,
     h6 {
     color: var(--text-color-full);
+    font-family: ManropeBold;
     }
 
     p {

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import defaultPhoto from '../../images/default.jpg';
+import defaultPhoto from '../../images/default-square.jpg';
 
 export const ItemWrap = styled.li`
   display: flex;
