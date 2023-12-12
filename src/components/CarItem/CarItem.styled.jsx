@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import defaultPhoto from '../../images/default.jpg';
 
 export const ItemWrap = styled.li`
   display: flex;
@@ -24,6 +25,7 @@ export const ImageWrap = styled.div`
 
 export const Image = styled.img`
   position: relative;
+  background-image: url(${defaultPhoto});
   width: 100%;
   height: 268px;
   object-fit: cover;

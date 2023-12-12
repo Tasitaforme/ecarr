@@ -6,7 +6,7 @@ export const FiltersWrap = styled.ul`
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end;
-  row-gap: 50px;
+  row-gap: 12px;
   column-gap: 18px;
   margin: 0 auto 50px;
   font-family: ManropeMedium;
