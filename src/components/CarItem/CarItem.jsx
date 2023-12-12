@@ -26,7 +26,7 @@ export default function CarItem({ data }) {
     <ItemWrap>
       <ImageWrap>
         <Heart data={data} />
-        <Image src={data.img} alt={data.make} />
+        <Image src={data.img} alt={data.make} loading="lazy" />
       </ImageWrap>
 
       <TitleWrap>
